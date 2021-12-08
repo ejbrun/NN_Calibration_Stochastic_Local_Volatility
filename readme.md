@@ -1,4 +1,4 @@
-## Model Calibration with deep networks
+## Calibration of stochastic local volatility model via neural networks
 
 Eric Brunner, eric.brunner@uranus.uni-freiburg.de
 
