@@ -1,8 +1,9 @@
 ## Calibration of stochastic local volatility model via neural networks
 
-Eric Brunner, eric.brunner@uranus.uni-freiburg.de
+### Dependencies:
+- Tensorflow 1.15
+- Keras 2.3.1
 
-We try to calibrate stochastic local volatility models by learning the local volatility function by means of a neural network. The folder heston_slv_calibration contains a calibration of both the stochastic and the local volatility part by means of neural networks.
+We calibrate stochastic local volatility (SLV)) models by an approach based on neural networks. In the first step, the stochastic volatility model (Heston model) is calibrated by learning the map from Heston parameters to volatility surface by means of a neural network. Using these parameters, in a second step the local volatility part (Leverage function) of the SLV-model is directly approximated by an additional neural network.
 
-Remarks:
-Requires Tensorflow 1.15 and Keras 2.3.1..
+Eric Brunner, eric.brunner@physik.uni-freiburg.de
